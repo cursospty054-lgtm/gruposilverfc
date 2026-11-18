@@ -21,6 +21,27 @@ body
      background-color: #f4f6f9;
      line-height: 1.6;
     }
+/* Adaptación para teléfonos móviles */
+@media (max-width: 768px) {
+  /* Ajustar imágenes para que no se desborden */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hacer que el menú de navegación se organice en columna */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Ajustar márgenes y contenedor principal */
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 
 /* Regla general para títulos: asegura una tipografía imponente y deportiva */
 h1, h2, h3 {

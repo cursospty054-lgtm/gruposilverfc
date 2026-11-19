@@ -304,19 +304,28 @@ h1, h2, h3 {
 //* ==========================================================================
    ESTILOS PARA VIDEOS LOCALES (.mp4)
    ========================================================================== */
-.video-contenedor {
-    max-width: 100px;
-    margin: 2rem auto;
-    text-align: center;
-}
-
-.video-responsive {
-    width: 30%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: #0b132b; /* Fondo oscuro institucional mientras carga el video */
-}
+   .video-contenedor {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 16px;
+     align-items: flex-start;
+   }
+   
+   .video-responsive {
+     width: 280px;
+     max-width: 100%;
+     aspect-ratio: 9 / 16;
+     height: auto;
+     object-fit: cover;
+     border-radius: 12px;
+   }
+   
+   @media (max-width: 768px) {
+     .video-responsive {
+       width: 100%;
+       max-width: 340px;
+     }
+   }
 
 /* ==========================================================================
    ESTILOS DE LA GALERÍA Y CONTROL DE TAMAÑO DE IMÁGENES
